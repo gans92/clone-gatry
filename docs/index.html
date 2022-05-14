@@ -1,37 +1,675 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Promoções | Gatry
+    </title>
+    <link href="/favicon.ico?1649092878" type="image/x-icon" rel="icon"/>
+    <link href="/favicon.ico?1649092878" type="image/x-icon" rel="shortcut icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-You can use the [editor on GitHub](https://github.com/gans92/clone-gatry/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+    <link rel="stylesheet" href="/ASSETS/css/style.css"/>
+    <link rel="stylesheet" href="ASSETS/css/reset.css"/> 
+    <link rel="stylesheet" href="/vendor/bootstrap/css/dist.bootstrap.cs"/>
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.css"/>  
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootsstrap.min.css"/>    
+    <link rel="stylesheet" href="/vendor/bootstrap/js/bootstrap.bundle.js"/> 
+    <link rel="stylesheet" href="/vendor/bootstrap-rating/bootstrap-rating.min.css"/>    
+    <link rel="stylesheet" href="/vendor/bootstrap-rating/bootstrap-rating.min.js"/>    
+    <link rel="stylesheet" href="/vendor/fancyapps/dist/fancybox.css"/>    
+    <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>    
+    <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>    
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    <link rel="stylesheet" href="/vendor/sweetalert2/dist/sweetalert2.min.css?1649092878"/>    
+    <link rel="stylesheet" href="/vendor/jquery-toast-plugin/dist/jquery.toast.min.css?1649092878"/>    
+    <link rel="stylesheet" href="/vendor/sweetalert2/dist/sweetalert2.min.css?1649092878"/>    
+    <link rel="stylesheet" href="/vendor/jquery-toast-plugin/dist/jquery.toast.min.css?1649092878"/>    
+        
+    <script type="text/javascript">
+        var USER_LOGGED = true;
+                    var USER_NAME = "Gabriel ";
+            var USER_PHOTO = "//graph.facebook.com/1155950634915600/picture?type=large";
+                var WEB_ROOT = "https://gatry.com";
+        var PUSHER_APP_KEY = "a350d71befcecdb171ea";
+        var PUSHER_APP_CHANNEL = "gatry-site";
+        var PUSHER_IDENTIFY = "MTE5ZDQzYzhiZjdmZTQxYTBlZGJmMmFlYWE4MDY1MzY=";
+    </script>
 
-```markdown
-Syntax highlighted code block
+    <script src="/vendor/bootstrap-rating/bootstrap-rating.min.js"></script>    
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.js"></script>    
+    <script src="/vendor/clipboard/dist/clipboard.min.js"></script>    
+    <script src="/vendor/fancyapps/dist/fancybox.umd.js"></script>    
+    <script src="/vendor/imsky-holder/holder.min.js"></script>    
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+    <script src="/vendor/jquery/dist/jquery.min.js?1649092878"></script>    
+    <script src="/vendor/detectmobilebrowser/detectmobilebrowser.min.js?1649092878"></script>    
+    <script src="/vendor/sweetalert2/dist/sweetalert2.all.min.js?1649092878"></script>    
+    <script src="/vendor/jquery-toast-plugin/dist/jquery.toast.min.js?1649092878"></script>    
+    <script src="/vendor/clipboard/dist/clipboard.min.js?1649092878"></script>    
+    <script src="https://js.pusher.com/7.0/pusher.min.js"></script>    
+    <script src="/vendor/tributejs/dist/tribute.js"></script>    
+    <script src="/vendor/textarea-autosize/textarea_autosize.min.js?1649092878"></script>    
+    <script src="/ASSETS/js/base.js"></script>    
+    <script src="/ASSETS/js/comments.js"></script>
+    <script src="/js/promotions/promotions.js?1649092878"></script>
 
-**Bold** and _Italic_ and `Code` text
+            <script type="text/javascript">
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-[Link](url) and ![Image](src)
-```
+            ga('create', 'UA-62348636-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    
+</head>
+<body>
+    <section class="top-bar">
+        <div class="header">
+            <div class="container">
+                <div class="wrapper-header">
+                    <div class="logo">
+                        <a href="/">Gatry</a>                    </div>
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+                    <div class="share">
+                        <a href="#" class="link-icon">Compartilhar</a>
+                        <div class="arrow_box">
+                            <ul>
+                                <li data-share="promocao">
+                                    <a href="/promocoes/enviar/">Promoção</a>                                </li>
+                                <li data-share="avaliacao">
+                                    <a href="/avaliacoes/enviar/">Avaliações</a>                                </li>
+                                <li data-share="cupons">
+                                    <a href="/cupons/enviar/">Cupons</a>                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-### Jekyll Themes
+                    <div class="login">
+                        <img src="//graph.facebook.com/1155950634915600/picture?type=large" class="link-icon rounded-circle" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/>
+                        <div class="arrow_box">
+                            <ul>
+                                <li data-user-menu="perfil">
+                                    <a href="/usuarios/detalhe/gansgans/notificacoes">Notificações <div id="bullet-notificacoes-count" class="badge rounded-circle ">0</div></a>                                </li>
+                                <li data-user-menu="perfil">
+                                    <a href="/usuarios/detalhe/gansgans">Perfil</a>                                </li>
+                                <li data-user-menu="meus-alertas">
+                                    <a href="/usuarios/meus-alertas">Meus Alertas</a>                                </li>
+                                <li data-user-menu="minha-conta">
+                                    <a href="/usuarios/minha-conta">Minha Conta</a>                                </li>
+                                <li data-user-menu="sair">
+                                    <a href="/usuarios/logout">Sair</a>                                </li>
+                            </ul>
+                        </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/gans92/clone-gatry/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+        <nav class="menu">
+            <div class="container">
+                <ul>
+                    <li data-menu="avaliacoes">
+                        <a href="/avaliacoes">Avaliações <div id="bullet-avaliacoes" class="badge rounded-circle">0</div></a>                    </li>
 
-### Support or Contact
+                    <li data-menu="promocoes">
+                        <a href="/">Promoções <div id="bullet-promocoes" class="badge rounded-circle">0</div></a>                    </li>
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+                    <li data-menu="cupons">
+                        <a href="/cupons">Cupons <div id="bullet-cupons" class="badge rounded-circle">0</div></a>                    </li>
+
+                    <li data-menu="livre">
+                        <a href="/livre">Livre <div id="bullet-livres" class="badge rounded-circle">0</div></a>                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <div class="container pl-md-0 pr-md-0 pb-2">
+                <div class="d-flex mt-4">
+	<form method="get" accept-charset="utf-8" class="form-inline col-8 col-sm-9 col-md-10 pl-0" role="form" action="/">	<div class="search-bar col p-0">
+        <div class="input-group">
+            <input class="form-control mr-sm-2" type="text" name="q" placeholder="Pesquisar em Promoções" value="">
+
+            <button class="btn btn-link" type="submit">
+            	<span class="fa fa-search"></span>
+            </button>
+        </div>
+    </div>
+	</form>
+	<a href="/usuarios/criar-alerta" class="btn btn-criar-alerta col-4 col-sm-3 col-md-2 align-items-center d-flex justify-content-center">Criar Alerta</a>
+</div>
+
+<section class="promotions row">
+
+	
+		
+<article>
+    <div class="image">
+
+        <a href="https://www.awin1.com/cread.php?awinmid=17590&awinaffid=667929&platform=dl&ued=https%3A%2F%2Fwww.fastshop.com.br%2Fweb%2Fp%2Fd%2FSGUN65AU8000_PRD%2Fsamsung-smart-tv-crystal-uhd-4k-65-slim-tela-sem-limites-visual-livre-de-cabos-alexa-e-wi-fi-65au8000" target="_blank"><img src="https://cdn.gatry.com/gatry-static/promocao/imagem/de00eaf6102b6266fa9c8067d57e948b.jpg" title="Samsung Smart TV Crystal UHD 4K 65”, Slim, Tela Sem Limites, Visual Livre De Cabos, Alexa E Wi-Fi - 65AU8000" itemprop="image" alt=""/></a>
+        <div class="option-other ml-auto d-block d-sm-none">
+            <a href="/usuarios/detalhe/felipelima" class="user-link"><img src="https://www.gravatar.com/avatar/d88d79fd2945035e0f7353f27bc1e9f9?d=http%3A%2F%2Fgatry.com%2Fimg%2Fuser_default.png" title="Felipe Lima" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+            <p class="date" itemprop="startDate" title="28/10/2019 às 17:35">
+                1 minuto <span>atrás</span>            </p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h3><a href="https://www.awin1.com/cread.php?awinmid=17590&amp;awinaffid=667929&amp;platform=dl&amp;ued=https%3A%2F%2Fwww.fastshop.com.br%2Fweb%2Fp%2Fd%2FSGUN65AU8000_PRD%2Fsamsung-smart-tv-crystal-uhd-4k-65-slim-tela-sem-limites-visual-livre-de-cabos-alexa-e-wi-fi-65au8000" target="_blank">Samsung Smart TV Crystal UHD 4K 65”, Slim, Tela Sem Limites, Visual Livre De Cabos, Alexa E Wi-Fi - 65AU8000</a></h3>
+
+        <p class="price">
+            R$ 3.829,00        </p>
+
+                <p class="comment text-break">
+                        Legal, obrigado pela orientação,...        </p>
+        
+        <div class="options d-flex">
+
+                        <div class="option-comment align-self-end">
+                <a href="/promocoes/175820/samsung-smart-tv-crystal-uhd-4k-65-slim-tela-sem-limites-visual-livre-de-cabos-alexa-e-wi-fi-65au8000?comentarios" data-lightbox-comments="data-lightbox-comments">25 Comentários</a>            </div>
+            
+                        <div class="option-store align-self-end ml-3">
+                <a href="https://www.awin1.com/cread.php?awinmid=17590&awinaffid=667929&platform=dl&ued=https%3A%2F%2Fwww.fastshop.com.br%2Fweb%2Fp%2Fd%2FSGUN65AU8000_PRD%2Fsamsung-smart-tv-crystal-uhd-4k-65-slim-tela-sem-limites-visual-livre-de-cabos-alexa-e-wi-fi-65au8000" class="rounded" target="_blank"><span class="d-none d-sm-inline-block">Ir para</span> Fastshop</a>            </div>
+            
+                        <div class="option-more align-self-end ml-3 -md-block">
+                <a href="/promocoes/175820/samsung-smart-tv-crystal-uhd-4k-65-slim-tela-sem-limites-visual-livre-de-cabos-alexa-e-wi-fi-65au8000">...</a>            </div>
+            
+            <div class="option-other ml-auto d-none d-sm-block">
+                <a href="/usuarios/detalhe/felipelima" class="user-link"><img src="https://www.gravatar.com/avatar/d88d79fd2945035e0f7353f27bc1e9f9?d=http%3A%2F%2Fgatry.com%2Fimg%2Fuser_default.png" title="Felipe Lima" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+                <p class="date" itemprop="startDate" title="14/04/2022 às 18:11 ">
+                    1 minuto <span>atrás</span>                </p>
+            </div>
+
+        </div>
+    </div>
+
+</article>
+<article>
+    <div class="image">
+
+        <a href="https://amzn.to/3jOw5Ko" target="_blank"><img src="https://cdn.gatry.com/gatry-static/promocao/imagem/65880800496549eb787bb0748ee05e9f.jpg" title="Colchão Emma Duo Queen Size - Espuma Dupla Face (macio Vs. Firme)" itemprop="image" alt=""/></a>
+        <div class="option-other ml-auto d-block d-sm-none">
+            <a href="/usuarios/detalhe/chrome" class="user-link"><img src="https://cdn.gatry.com/gatry-static/user/foto/79a26367cb70cd75078a4dd3c3fb5630.png" title="Chrome" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+            <p class="date" itemprop="startDate" title="28/10/2019 às 17:35">
+                2 minutos <span>atrás</span>            </p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h3><a href="https://amzn.to/3jOw5Ko" target="_blank">Colchão Emma Duo Queen Size - Espuma Dupla Face (macio Vs. Firme)</a></h3>
+
+        <p class="price">
+            R$ 1.997,40        </p>
+
+                <p class="comment text-break">
+                        Comprei o guldi firme! Tem cupom...        </p>
+        
+        <div class="options d-flex">
+
+                        <div class="option-comment align-self-end">
+                <a href="/promocoes/175919/colchao-emma-duo-queen-size-espuma-dupla-face-macio-vs-firme-1?comentarios" data-lightbox-comments="data-lightbox-comments">10 Comentários</a>            </div>
+            
+                        <div class="option-store align-self-end ml-3">
+                <a href="https://amzn.to/3jOw5Ko" class="rounded" target="_blank"><span class="d-none d-sm-inline-block">Ir para</span> Amazon</a>            </div>
+            
+                        <div class="option-more align-self-end ml-3 -md-block">
+                <a href="/promocoes/175919/colchao-emma-duo-queen-size-espuma-dupla-face-macio-vs-firme-1">...</a>            </div>
+            
+            <div class="option-other ml-auto d-none d-sm-block">
+                <a href="/usuarios/detalhe/chrome" class="user-link"><img src="https://cdn.gatry.com/gatry-static/user/foto/79a26367cb70cd75078a4dd3c3fb5630.png" title="Chrome" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+                <p class="date" itemprop="startDate" title="17/04/2022 às 12:39 ">
+                    2 minutos <span>atrás</span>                </p>
+            </div>
+
+        </div>
+    </div>
+
+</article>
+		<div class="w-100 mb-4">
+			<div class="float-left">
+				<a href="#ultimas-promocoes" class="text-gray arrows">↓ Últimas Promoções</a>			</div>
+
+			<div class="float-right">
+				<a href="/comentarios" class="text-gray arrows">Comentários ↑</a>			</div>
+		</div>
+
+		<div id="ultimas-promocoes"></div>
+	
+
+	
+<article>
+    <div class="image">
+
+        <a href="https://www.awin1.com/cread.php?awinmid=17621&awinaffid=667929&platform=dl&ued=https%3A%2F%2Fm.pontofrio.com.br%2Fsabonete-barra-elite-antibacteriano-protege-e-hidrata-85g-12-unidades-55035295%2Fp%2F55035295" target="_blank"><img src="https://cdn.gatry.com/gatry-static/promocao/imagem/4200d883a5fab0fd5c27424cc75a9a55.jpg" title="Sabonete Barra Elite Antibacteriano Protege E Hidrata 85g - 12 Unidades" itemprop="image" alt=""/></a>
+        <div class="option-other ml-auto d-block d-sm-none">
+            <a href="/usuarios/detalhe/queijo" class="user-link"><img src="https://cdn.gatry.com/gatry-static/user/foto/644df1297c90a3a60010418522b8c74f.jpg" title="Queijo" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+            <p class="date" itemprop="startDate" title="28/10/2019 às 17:35">
+                22 minutos <span>atrás</span>            </p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h3><a href="https://www.awin1.com/cread.php?awinmid=17621&amp;awinaffid=667929&amp;platform=dl&amp;ued=https%3A%2F%2Fm.pontofrio.com.br%2Fsabonete-barra-elite-antibacteriano-protege-e-hidrata-85g-12-unidades-55035295%2Fp%2F55035295" target="_blank">Sabonete Barra Elite Antibacteriano Protege E Hidrata 85g - 12 Unidades</a></h3>
+
+        <p class="price">
+            R$ 22,90        </p>
+
+        
+        <div class="options d-flex">
+
+                        <div class="option-comment align-self-end">
+                <a href="/promocoes/175926/sabonete-barra-elite-antibacteriano-protege-e-hidrata-85g-12-unidades?comentarios" data-lightbox-comments="data-lightbox-comments">0 Comentário</a>            </div>
+            
+                        <div class="option-store align-self-end ml-3">
+                <a href="https://www.awin1.com/cread.php?awinmid=17621&awinaffid=667929&platform=dl&ued=https%3A%2F%2Fm.pontofrio.com.br%2Fsabonete-barra-elite-antibacteriano-protege-e-hidrata-85g-12-unidades-55035295%2Fp%2F55035295" class="rounded" target="_blank"><span class="d-none d-sm-inline-block">Ir para</span> Pontofrio</a>            </div>
+            
+                        <div class="option-more align-self-end ml-3 -md-block">
+                <a href="/promocoes/175926/sabonete-barra-elite-antibacteriano-protege-e-hidrata-85g-12-unidades">...</a>            </div>
+            
+            <div class="option-other ml-auto d-none d-sm-block">
+                <a href="/usuarios/detalhe/queijo" class="user-link"><img src="https://cdn.gatry.com/gatry-static/user/foto/644df1297c90a3a60010418522b8c74f.jpg" title="Queijo" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+                <p class="date" itemprop="startDate" title="17/04/2022 às 16:54 ">
+                    22 minutos <span>atrás</span>                </p>
+            </div>
+
+        </div>
+    </div>
+
+</article>
+<article>
+    <div class="image">
+
+        <a href="https://www.lojadomecanico.com.br/produto/94972/33/783/aparador-de-grama-eletrico-800w-220v-tekna-tt800s" target="_blank"><img src="https://cdn.gatry.com/gatry-static/promocao/imagem/ff066e6830a734595b5b7a1e421f6075.jpg" title="Aparador De Grama Elétrico 800W - TEKNA-TT800S" itemprop="image" alt=""/></a>
+        <div class="option-other ml-auto d-block d-sm-none">
+            <a href="/usuarios/detalhe/yank" class="user-link"><img src="https://www.gravatar.com/avatar/237b958fd3ac5047245c94a9fdad944f?d=http%3A%2F%2Fgatry.com%2Fimg%2Fuser_default.png" title="Yank" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+            <p class="date" itemprop="startDate" title="28/10/2019 às 17:35">
+                23 minutos <span>atrás</span>            </p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h3><a href="https://www.lojadomecanico.com.br/produto/94972/33/783/aparador-de-grama-eletrico-800w-220v-tekna-tt800s" target="_blank">Aparador De Grama Elétrico 800W - TEKNA-TT800S</a></h3>
+
+        <p class="price">
+            R$ 129,90        </p>
+
+        
+        <div class="options d-flex">
+
+                        <div class="option-comment align-self-end">
+                <a href="/promocoes/175925/aparador-de-grama-eletrico-800w-tekna-tt800s?comentarios" data-lightbox-comments="data-lightbox-comments">0 Comentário</a>            </div>
+            
+                        <div class="option-store align-self-end ml-3">
+                <a href="https://www.lojadomecanico.com.br/produto/94972/33/783/aparador-de-grama-eletrico-800w-220v-tekna-tt800s" class="rounded" target="_blank"><span class="d-none d-sm-inline-block">Ir para</span> Lojadomecanico</a>            </div>
+            
+                        <div class="option-more align-self-end ml-3 -md-block">
+                <a href="/promocoes/175925/aparador-de-grama-eletrico-800w-tekna-tt800s">...</a>            </div>
+            
+            <div class="option-other ml-auto d-none d-sm-block">
+                <a href="/usuarios/detalhe/yank" class="user-link"><img src="https://www.gravatar.com/avatar/237b958fd3ac5047245c94a9fdad944f?d=http%3A%2F%2Fgatry.com%2Fimg%2Fuser_default.png" title="Yank" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+                <p class="date" itemprop="startDate" title="17/04/2022 às 16:53 ">
+                    23 minutos <span>atrás</span>                </p>
+            </div>
+
+        </div>
+    </div>
+
+</article>
+<article>
+    <div class="image">
+
+        <a href="https://amzn.to/36rCecE" target="_blank"><img src="https://cdn.gatry.com/gatry-static/promocao/imagem/c29c613b6e02ed83ce128fdd85fe2706.jpg" title="Escova Dental Colgate Classic Clean, Macia, 4 Unidades, Cores Sortidas" itemprop="image" alt=""/></a>
+        <div class="option-other ml-auto d-block d-sm-none">
+            <a href="/usuarios/detalhe/yank" class="user-link"><img src="https://www.gravatar.com/avatar/237b958fd3ac5047245c94a9fdad944f?d=http%3A%2F%2Fgatry.com%2Fimg%2Fuser_default.png" title="Yank" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+            <p class="date" itemprop="startDate" title="28/10/2019 às 17:35">
+                24 minutos <span>atrás</span>            </p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h3><a href="https://amzn.to/36rCecE" target="_blank">Escova Dental Colgate Classic Clean, Macia, 4 Unidades, Cores Sortidas</a></h3>
+
+        <p class="price">
+            R$ 9,89        </p>
+
+        
+        <div class="options d-flex">
+
+                        <div class="option-comment align-self-end">
+                <a href="/promocoes/175924/escova-dental-colgate-classic-clean-macia-4-unidades-cores-sortidas?comentarios" data-lightbox-comments="data-lightbox-comments">0 Comentário</a>            </div>
+            
+                        <div class="option-store align-self-end ml-3">
+                <a href="https://amzn.to/36rCecE" class="rounded" target="_blank"><span class="d-none d-sm-inline-block">Ir para</span> Amazon</a>            </div>
+            
+                        <div class="option-more align-self-end ml-3 -md-block">
+                <a href="/promocoes/175924/escova-dental-colgate-classic-clean-macia-4-unidades-cores-sortidas">...</a>            </div>
+            
+            <div class="option-other ml-auto d-none d-sm-block">
+                <a href="/usuarios/detalhe/yank" class="user-link"><img src="https://www.gravatar.com/avatar/237b958fd3ac5047245c94a9fdad944f?d=http%3A%2F%2Fgatry.com%2Fimg%2Fuser_default.png" title="Yank" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+                <p class="date" itemprop="startDate" title="17/04/2022 às 16:53 ">
+                    24 minutos <span>atrás</span>                </p>
+            </div>
+
+        </div>
+    </div>
+
+</article>
+<article>
+    <div class="image">
+
+        <a href="https://amzn.to/37kyNF9" target="_blank"><img src="https://cdn.gatry.com/gatry-static/promocao/imagem/779a3cd89cf76dbe0b1d74400946f716.jpg" title="Maquina De Acabamento Panasonic ER389X" itemprop="image" alt=""/></a>
+        <div class="option-other ml-auto d-block d-sm-none">
+            <a href="/usuarios/detalhe/morpouuu" class="user-link"><img src="https://cdn.gatry.com/gatry-static/user/foto/904e14e21b3180f7c7ed3df255ec8dcc.jpg" title="Dibob" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+            <p class="date" itemprop="startDate" title="28/10/2019 às 17:35">
+                25 minutos <span>atrás</span>            </p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h3><a href="https://amzn.to/37kyNF9" target="_blank">Maquina De Acabamento Panasonic ER389X</a></h3>
+
+        <p class="price">
+            R$ 175,00        </p>
+
+                <p class="comment text-break">
+                        Vendida pela Amazon        </p>
+        
+        <div class="options d-flex">
+
+                        <div class="option-comment align-self-end">
+                <a href="/promocoes/175923/maquina-de-acabamento-panasonic-er389x-1?comentarios" data-lightbox-comments="data-lightbox-comments">3 Comentários</a>            </div>
+            
+                        <div class="option-store align-self-end ml-3">
+                <a href="https://amzn.to/37kyNF9" class="rounded" target="_blank"><span class="d-none d-sm-inline-block">Ir para</span> Amazon</a>            </div>
+            
+                        <div class="option-more align-self-end ml-3 -md-block">
+                <a href="/promocoes/175923/maquina-de-acabamento-panasonic-er389x-1">...</a>            </div>
+            
+            <div class="option-other ml-auto d-none d-sm-block">
+                <a href="/usuarios/detalhe/morpouuu" class="user-link"><img src="https://cdn.gatry.com/gatry-static/user/foto/904e14e21b3180f7c7ed3df255ec8dcc.jpg" title="Dibob" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+                <p class="date" itemprop="startDate" title="17/04/2022 às 16:51 ">
+                    25 minutos <span>atrás</span>                </p>
+            </div>
+
+        </div>
+    </div>
+
+</article>
+<article>
+    <div class="image">
+
+        <a href="https://www.magazinevoce.com.br/magazinegatry/torneira-para-cozinha-gourmet-de-mesa-dupla-saida-monocomando-preta-nell-yl-03/p/230014400/cj/torc/" target="_blank"><img src="https://cdn.gatry.com/gatry-static/promocao/imagem/5f91e98d421189d94be0938094812f86.jpg" title="Torneira Para Cozinha Gourmet De Mesa Dupla Saída - Monocomando Nell YL-03" itemprop="image" alt=""/></a>
+        <div class="option-other ml-auto d-block d-sm-none">
+            <a href="/usuarios/detalhe/yank" class="user-link"><img src="https://www.gravatar.com/avatar/237b958fd3ac5047245c94a9fdad944f?d=http%3A%2F%2Fgatry.com%2Fimg%2Fuser_default.png" title="Yank" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+            <p class="date" itemprop="startDate" title="28/10/2019 às 17:35">
+                1 hora <span>atrás</span>            </p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h3><a href="https://www.magazinevoce.com.br/magazinegatry/torneira-para-cozinha-gourmet-de-mesa-dupla-saida-monocomando-preta-nell-yl-03/p/230014400/cj/torc/" target="_blank">Torneira Para Cozinha Gourmet De Mesa Dupla Saída - Monocomando Nell YL-03</a></h3>
+
+        <p class="price">
+            R$ 284,99        </p>
+
+        
+        <div class="options d-flex">
+
+                        <div class="option-comment align-self-end">
+                <a href="/promocoes/175922/torneira-para-cozinha-gourmet-de-mesa-dupla-saida-monocomando-nell-yl-03?comentarios" data-lightbox-comments="data-lightbox-comments">0 Comentário</a>            </div>
+            
+                        <div class="option-store align-self-end ml-3">
+                <a href="https://www.magazinevoce.com.br/magazinegatry/torneira-para-cozinha-gourmet-de-mesa-dupla-saida-monocomando-preta-nell-yl-03/p/230014400/cj/torc/" class="rounded" target="_blank"><span class="d-none d-sm-inline-block">Ir para</span> Magazineluiza</a>            </div>
+            
+                        <div class="option-more align-self-end ml-3 -md-block">
+                <a href="/promocoes/175922/torneira-para-cozinha-gourmet-de-mesa-dupla-saida-monocomando-nell-yl-03">...</a>            </div>
+            
+            <div class="option-other ml-auto d-none d-sm-block">
+                <a href="/usuarios/detalhe/yank" class="user-link"><img src="https://www.gravatar.com/avatar/237b958fd3ac5047245c94a9fdad944f?d=http%3A%2F%2Fgatry.com%2Fimg%2Fuser_default.png" title="Yank" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+                <p class="date" itemprop="startDate" title="17/04/2022 às 15:32 ">
+                    1 hora <span>atrás</span>                </p>
+            </div>
+
+        </div>
+    </div>
+
+</article>
+<article>
+    <div class="image">
+
+        <a href="https://www.awin1.com/cread.php?awinmid=17590&awinaffid=667929&platform=dl&ued=https%3A%2F%2Fwww.fastshop.com.br%2Fweb%2Fp%2Fd%2FLG27GL650FBA_PRD%2Fmonitor-gamer-ultragear-led-ips-27-pol-preto-lg-27gn750-fast" target="_blank"><img src="https://cdn.gatry.com/gatry-static/promocao/imagem/5dafa9460d4da9702e3f12d93cba492f.png" title="Monitor Gamer 27&quot; LG UltraGear LED IPS Com 1000:1 De Contraste - 27GL650F" itemprop="image" alt=""/></a>
+        <div class="option-other ml-auto d-block d-sm-none">
+            <a href="/usuarios/detalhe/27kgnuno" class="user-link"><img src="https://cdn.gatry.com/gatry-static/user/foto/3e97549840c906db459140fcffcc0664.jpg" title="Walter" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+            <p class="date" itemprop="startDate" title="28/10/2019 às 17:35">
+                1 hora <span>atrás</span>            </p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h3><a href="https://www.awin1.com/cread.php?awinmid=17590&amp;awinaffid=667929&amp;platform=dl&amp;ued=https%3A%2F%2Fwww.fastshop.com.br%2Fweb%2Fp%2Fd%2FLG27GL650FBA_PRD%2Fmonitor-gamer-ultragear-led-ips-27-pol-preto-lg-27gn750-fast" target="_blank">Monitor Gamer 27&quot; LG UltraGear LED IPS Com 1000:1 De Contraste - 27GL650F</a></h3>
+
+        <p class="price">
+            R$ 1.499,00        </p>
+
+        
+        <div class="options d-flex">
+
+                        <div class="option-comment align-self-end">
+                <a href="/promocoes/175921/monitor-gamer-27-lg-ultragear-led-ips-com-1000-1-de-contraste-27gl650f?comentarios" data-lightbox-comments="data-lightbox-comments">0 Comentário</a>            </div>
+            
+                        <div class="option-store align-self-end ml-3">
+                <a href="https://www.awin1.com/cread.php?awinmid=17590&awinaffid=667929&platform=dl&ued=https%3A%2F%2Fwww.fastshop.com.br%2Fweb%2Fp%2Fd%2FLG27GL650FBA_PRD%2Fmonitor-gamer-ultragear-led-ips-27-pol-preto-lg-27gn750-fast" class="rounded" target="_blank"><span class="d-none d-sm-inline-block">Ir para</span> Fastshop</a>            </div>
+            
+                        <div class="option-more align-self-end ml-3 -md-block">
+                <a href="/promocoes/175921/monitor-gamer-27-lg-ultragear-led-ips-com-1000-1-de-contraste-27gl650f">...</a>            </div>
+            
+            <div class="option-other ml-auto d-none d-sm-block">
+                <a href="/usuarios/detalhe/27kgnuno" class="user-link"><img src="https://cdn.gatry.com/gatry-static/user/foto/3e97549840c906db459140fcffcc0664.jpg" title="Walter" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+                <p class="date" itemprop="startDate" title="17/04/2022 às 15:31 ">
+                    1 hora <span>atrás</span>                </p>
+            </div>
+
+        </div>
+    </div>
+
+</article>
+<article>
+    <div class="image">
+
+        <a href="https://www.casaevideo.com.br/barra-chocolate-kitkat-4-fingers-dark-415g/p" target="_blank"><img src="https://cdn.gatry.com/gatry-static/promocao/imagem/b176874eceffadaea972b1debe27c5ee.jpg" title="6x Barra De Chocolate Kit Kat 4 Fingers Dark 41.5g" itemprop="image" alt=""/></a>
+        <div class="option-other ml-auto d-block d-sm-none">
+            <a href="/usuarios/detalhe/queijo" class="user-link"><img src="https://cdn.gatry.com/gatry-static/user/foto/644df1297c90a3a60010418522b8c74f.jpg" title="Queijo" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+            <p class="date" itemprop="startDate" title="28/10/2019 às 17:35">
+                1 hora <span>atrás</span>            </p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h3><a href="https://www.casaevideo.com.br/barra-chocolate-kitkat-4-fingers-dark-415g/p" target="_blank">6x Barra De Chocolate Kit Kat 4 Fingers Dark 41.5g</a></h3>
+
+        <p class="price">
+            R$ 9,96        </p>
+
+                <p class="comment text-break">
+                        Se for o da imagem importado, hein.        </p>
+        
+        <div class="options d-flex">
+
+                        <div class="option-comment align-self-end">
+                <a href="/promocoes/175920/6x-barra-de-chocolate-kit-kat-4-fingers-dark-41-5g?comentarios" data-lightbox-comments="data-lightbox-comments">2 Comentários</a>            </div>
+            
+                        <div class="option-store align-self-end ml-3">
+                <a href="https://www.casaevideo.com.br/barra-chocolate-kitkat-4-fingers-dark-415g/p" class="rounded" target="_blank"><span class="d-none d-sm-inline-block">Ir para</span> Casaevideo</a>            </div>
+            
+                        <div class="option-more align-self-end ml-3 -md-block">
+                <a href="/promocoes/175920/6x-barra-de-chocolate-kit-kat-4-fingers-dark-41-5g">...</a>            </div>
+            
+            <div class="option-other ml-auto d-none d-sm-block">
+                <a href="/usuarios/detalhe/queijo" class="user-link"><img src="https://cdn.gatry.com/gatry-static/user/foto/644df1297c90a3a60010418522b8c74f.jpg" title="Queijo" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+                <p class="date" itemprop="startDate" title="17/04/2022 às 15:30 ">
+                    1 hora <span>atrás</span>                </p>
+            </div>
+
+        </div>
+    </div>
+
+</article>
+<article>
+    <div class="image">
+
+        <a href="https://amzn.to/3jOw5Ko" target="_blank"><img src="https://cdn.gatry.com/gatry-static/promocao/imagem/65880800496549eb787bb0748ee05e9f.jpg" title="Colchão Emma Duo Queen Size - Espuma Dupla Face (macio Vs. Firme)" itemprop="image" alt=""/></a>
+        <div class="option-other ml-auto d-block d-sm-none">
+            <a href="/usuarios/detalhe/promotador" class="user-link"><img src="https://cdn.gatry.com/gatry-static/user/foto/5be01c66f7e3f5497238c581ef82dd16.png" title="Promotador" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+            <p class="date" itemprop="startDate" title="28/10/2019 às 17:35">
+                4 horas <span>atrás</span>            </p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h3><a href="https://amzn.to/3jOw5Ko" target="_blank">Colchão Emma Duo Queen Size - Espuma Dupla Face (macio Vs. Firme)</a></h3>
+
+        <p class="price">
+            R$ 1.997,40        </p>
+
+                <p class="comment text-break">
+                        O queridinho        </p>
+        
+        <div class="options d-flex">
+
+                        <div class="option-comment align-self-end">
+                <a href="/promocoes/175919/colchao-emma-duo-queen-size-espuma-dupla-face-macio-vs-firme-1?comentarios" data-lightbox-comments="data-lightbox-comments">10 Comentários</a>            </div>
+            
+                        <div class="option-store align-self-end ml-3">
+                <a href="https://amzn.to/3jOw5Ko" class="rounded" target="_blank"><span class="d-none d-sm-inline-block">Ir para</span> Amazon</a>            </div>
+            
+                        <div class="option-more align-self-end ml-3 -md-block">
+                <a href="/promocoes/175919/colchao-emma-duo-queen-size-espuma-dupla-face-macio-vs-firme-1">...</a>            </div>
+            
+            <div class="option-other ml-auto d-none d-sm-block">
+                <a href="/usuarios/detalhe/promotador" class="user-link"><img src="https://cdn.gatry.com/gatry-static/user/foto/5be01c66f7e3f5497238c581ef82dd16.png" title="Promotador" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+                <p class="date" itemprop="startDate" title="17/04/2022 às 12:39 ">
+                    4 horas <span>atrás</span>                </p>
+            </div>
+
+        </div>
+    </div>
+
+</article>
+<article>
+    <div class="image">
+
+        <a href="https://www.awin1.com/cread.php?awinmid=22195&awinaffid=904991&ued=https%3A%2F%2Fwww.submarino.com.br%2Fproduto%2F2751077691" target="_blank"><img src="https://cdn.gatry.com/gatry-static/promocao/imagem/ae41b7698d1ff20df3b3fbdb2091be16.jpg" title="Demon&#039;s Souls - PS5" itemprop="image" alt=""/></a>
+        <div class="option-other ml-auto d-block d-sm-none">
+            <a href="/usuarios/detalhe/27kd6kuf" class="user-link"><img src="https://www.gravatar.com/avatar/fbecc636de9ecf8523c48f7d967d0a49?d=http%3A%2F%2Fgatry.com%2Fimg%2Fuser_default.png" title="Felippe" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+            <p class="date" itemprop="startDate" title="28/10/2019 às 17:35">
+                4 horas <span>atrás</span>            </p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h3><a href="https://www.awin1.com/cread.php?awinmid=22195&amp;awinaffid=904991&amp;ued=https%3A%2F%2Fwww.submarino.com.br%2Fproduto%2F2751077691" target="_blank">Demon&#039;s Souls - PS5</a></h3>
+
+        <p class="price">
+            R$ 143,00        </p>
+
+                <p class="comment text-break">
+                        Use o aplicativo e o Cupom 15NOA...        </p>
+        
+        <div class="options d-flex">
+
+                        <div class="option-comment align-self-end">
+                <a href="/promocoes/175917/demon-s-souls-ps5-1?comentarios" data-lightbox-comments="data-lightbox-comments">1 Comentário</a>            </div>
+            
+                        <div class="option-store align-self-end ml-3">
+                <a href="https://www.awin1.com/cread.php?awinmid=22195&awinaffid=904991&ued=https%3A%2F%2Fwww.submarino.com.br%2Fproduto%2F2751077691" class="rounded" target="_blank"><span class="d-none d-sm-inline-block">Ir para</span> Submarino</a>            </div>
+            
+                        <div class="option-more align-self-end ml-3 -md-block">
+                <a href="/promocoes/175917/demon-s-souls-ps5-1">...</a>            </div>
+            
+            <div class="option-other ml-auto d-none d-sm-block">
+                <a href="/usuarios/detalhe/27kd6kuf" class="user-link"><img src="https://www.gravatar.com/avatar/fbecc636de9ecf8523c48f7d967d0a49?d=http%3A%2F%2Fgatry.com%2Fimg%2Fuser_default.png" title="Felippe" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+                <p class="date" itemprop="startDate" title="17/04/2022 às 12:34 ">
+                    4 horas <span>atrás</span>                </p>
+            </div>
+
+        </div>
+    </div>
+
+</article>
+<article>
+    <div class="image">
+
+        <a href="https://www.awin1.com/cread.php?awinmid=22193&awinaffid=904991&ued=https%3A%2F%2Fwww.americanas.com.br%2Fproduto%2F4032028315%2F" target="_blank"><img src="https://cdn.gatry.com/gatry-static/promocao/imagem/2d507cca55c7d335fdf7df2707d2379f.jpg" title="Gran Turismo 7 Edição Standard PS5" itemprop="image" alt=""/></a>
+        <div class="option-other ml-auto d-block d-sm-none">
+            <a href="/usuarios/detalhe/matheusmts" class="user-link"><img src="//graph.facebook.com/2326084570751757/picture?type=large" title="Matheus Santiago" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+            <p class="date" itemprop="startDate" title="28/10/2019 às 17:35">
+                4 horas <span>atrás</span>            </p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h3><a href="https://www.awin1.com/cread.php?awinmid=22193&amp;awinaffid=904991&amp;ued=https%3A%2F%2Fwww.americanas.com.br%2Fproduto%2F4032028315%2F" target="_blank">Gran Turismo 7 Edição Standard PS5</a></h3>
+
+        <p class="price">
+            R$ 188,82        </p>
+
+        
+        <div class="options d-flex">
+
+                        <div class="option-comment align-self-end">
+                <a href="/promocoes/175918/gran-turismo-7-edicao-standard-ps5?comentarios" data-lightbox-comments="data-lightbox-comments">0 Comentário</a>            </div>
+            
+                        <div class="option-store align-self-end ml-3">
+                <a href="https://www.awin1.com/cread.php?awinmid=22193&awinaffid=904991&ued=https%3A%2F%2Fwww.americanas.com.br%2Fproduto%2F4032028315%2F" class="rounded" target="_blank"><span class="d-none d-sm-inline-block">Ir para</span> Americanas</a>            </div>
+            
+                        <div class="option-more align-self-end ml-3 -md-block">
+                <a href="/promocoes/175918/gran-turismo-7-edicao-standard-ps5">...</a>            </div>
+            
+            <div class="option-other ml-auto d-none d-sm-block">
+                <a href="/usuarios/detalhe/matheusmts" class="user-link"><img src="//graph.facebook.com/2326084570751757/picture?type=large" title="Matheus Santiago" class="user-image rounded-circle" itemprop="image" onerror="this.src=&quot;/img/user_default.png&quot;" alt=""/></a>
+                <p class="date" itemprop="startDate" title="17/04/2022 às 12:33 ">
+                    4 horas <span>atrás</span>                </p>
+            </div>
+
+        </div>
+    </div>
+
+</article></section>
+
+<div class="load-more">
+	<button d
+		ata-url="/"
+		data-finish-text="Todas as promoções foram exibidas"
+		data-append-local=".promotions"
+		data-current-page="1"
+		data-exclude=""
+		>
+		Carregar mais...
+	</button>
+</div>
+
+    </div>
+
+    
+    <div class="scroll-to-top">
+        <img src="/img/up.png?1649092878" alt=""/>    </div>
+
+    <footer>
+        <div class="container">
+            <a href="#">GATRY?</a>
+            <a href="/termos">TERMOS</a>
+            <a href="mailto:guilherme@gatry.com">CONTATO</a>
+            <a href="https://www.instagram.com/gatry_promocoes/" target="_blank">INSTAGRAM</a>
+            <span class="d-block mb-2">Gatry © 2022</span>
+        </div>
+    </footer>
+
+</body>
+</html>
